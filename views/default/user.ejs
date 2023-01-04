@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1>用户中心</h1>
+  <h2>
+    <%=title%>
+  </h2>
+  <form action="/user/login2" method="post" enctype="multipart/form-data">
+    <div>
+      <label for="username">用户名</label>
+      <input type="text" name="username" id="username">
+    </div>
+    <div>
+      <label for="password">密码</label>
+      <input type="password" name="password" id="password">
+    </div>
+    <!-- 上传文件 -->
+    <div>
+      <label for="avatar">头像</label>
+      <input type="file" name="file" id="">
+    </div>
+    <div>
+      <label for="avatar">头像</label>
+      <input type="file" name="file" id="">
+    </div>
+    <div>
+      <label for="avatar">头像</label>
+      <input type="file" name="file" id="">
+    </div>
+    <div>
+      <button type="submit">登录</button>
+    </div>
+  </form>
+</body>
+
+</html>
