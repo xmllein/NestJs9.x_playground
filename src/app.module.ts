@@ -16,12 +16,15 @@ import { HouseEntity } from './entity/house.entity';
 
 // 引入中间件
 import { InitMiddleware } from './middleware/init/init.middleware';
+// 文章服务
 import { ArticleService } from './article/article.service';
+// 房子控制器
 import { HouseController } from './house/house.controller';
 // import { ServiceService } from './house/service/service.service';
 import { ServiceService } from './house/house/service/service.service';
 // import { ServiceService } from './article/service/service.service';
 import { HouseService } from './house/house/house.service';
+import { CategoryModule } from './category/category.module';
 
 @Module({
   imports: [
@@ -47,6 +50,7 @@ import { HouseService } from './house/house/house.service';
     }),
     // mysql配置数据库模型
     TypeOrmModule.forFeature([HouseEntity]),
+    CategoryModule,
   ],
 
   controllers: [

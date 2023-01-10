@@ -1,8 +1,10 @@
 import { Controller, Get } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
 
 // 引入服务
 import { ServiceService } from './house/service/service.service';
 
+@ApiTags('民宿')
 @Controller('house')
 export class HouseController {
   constructor(private readonly houseService: ServiceService) {}

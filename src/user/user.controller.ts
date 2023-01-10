@@ -21,7 +21,9 @@ import { UserPipe } from './user.pipe';
 import * as Joi from '@hapi/joi';
 // 引入守卫
 import { AuthGuard } from '../auth/auth.guard';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('用户管理')
 @Controller('user')
 @UseGuards(AuthGuard)
 export class UserController {
