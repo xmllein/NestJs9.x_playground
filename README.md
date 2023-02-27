@@ -17,7 +17,11 @@
 - [x] `NestJS` 拦截器 (`interceptors`)
 - [x] `NestJS` `mongoose` 操作 `mongodb`
 - [x] `NestJS` `TypeORM` 操作 `mysql`
-- [x] `NestJS` 集成`swagger` 文档
+- [x] `NestJS` 集成`swagger` 文档 （http://localhost:3000/api）
+
+## swagger
+
+![swagger](./shot/2.png)
 
 ## 命令行
 

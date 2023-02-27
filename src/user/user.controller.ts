@@ -12,6 +12,7 @@ import {
   UploadedFiles,
   UsePipes,
   UseGuards,
+  Patch,
 } from '@nestjs/common';
 import { FileInterceptor, FilesInterceptor } from '@nestjs/platform-express';
 import { UserService } from './user.service';
@@ -52,7 +53,7 @@ export class UserController {
   }
 
   // 增加用户
-  @Get('create')
+  @Post('create')
   @UsePipes(
     new UserPipe(
       Joi.object({
@@ -66,7 +67,7 @@ export class UserController {
   }
 
   // 用户编辑
-  @Get('edit')
+  @Patch('edit')
   edit(@Request() req): string {
     return `用户编辑=== ${JSON.stringify(req.query)}`;
   }

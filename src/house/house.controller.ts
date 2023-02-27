@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Patch, Post } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 
 // 引入服务
@@ -23,14 +23,14 @@ export class HouseController {
   }
 
   // 添加房屋
-  @Get('create')
+  @Post('create')
   async create() {
     console.log('添加房屋');
     await this.houseService.createHouse();
   }
 
   // 修改房屋
-  @Get('update')
+  @Patch('update')
   async update() {
     console.log('修改房屋');
     await this.houseService.updateHouse();

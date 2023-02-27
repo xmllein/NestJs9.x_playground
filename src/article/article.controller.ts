@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Delete, Get, Patch, Post } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 
 // 引入服务
@@ -19,14 +19,14 @@ export class ArticleController {
   }
 
   // 增加文章
-  @Get('create')
+  @Post('create')
   create(): void {
     // return '我是增加文章页面';
     this.articleService.createArticle();
   }
 
   // 修改文章
-  @Get('update')
+  @Patch('update')
   async update() {
     // return '我是修改文章页面';
     console.log('修改文章');
@@ -34,7 +34,7 @@ export class ArticleController {
   }
 
   // 删除
-  @Get('delete')
+  @Delete('delete')
   async delete() {
     // return '我是删除文章页面';
     console.log('删除文章');
