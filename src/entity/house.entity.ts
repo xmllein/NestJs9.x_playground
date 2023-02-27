@@ -1,7 +1,7 @@
 // 房子实体表
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('house1')
+@Entity('house')
 export class HouseEntity {
   @PrimaryGeneratedColumn()
   id: number;

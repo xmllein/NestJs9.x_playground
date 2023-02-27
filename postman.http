@@ -1,17 +1,30 @@
-@BASE_URL=http://localhost:3000/
+@hostname= http://localhost:3000
+
+
+### get请求
+GET {{hostname}} HTTP/1.1
+
+Content-Type: application/json
 
 
 
 ### 获取用户信息
-@GET {{BASE_URL}}user HTTP/1.1
+GET {{hostname}}/user/list HTTP/1.1
+
+Content-Type: application/json
+
+### 民宿列表
+GET {{hostname}}/house/list HTTP/1.1
+
+Content-Type: application/json
 
 
 ### 登录
-@POST {{BASE_URL}}/user/login HTTP/1.1
+POST {{hostname}}/user/login2 HTTP/1.1
 Content-Type: application/json
 
 {
     "username": "admin",
-    "password": "admin"
+    "password": "123456"
 }
 

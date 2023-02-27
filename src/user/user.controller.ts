@@ -96,20 +96,21 @@ export class UserController {
   @UseInterceptors(FilesInterceptor('file'))
   login2(@Body() data, @UploadedFiles() files): string {
     console.log(files);
+    console.log(data);
     // 保存文件
-    files.forEach((file) => {
-      const writeStream = createWriteStream(
-        join(
-          __dirname,
-          '..',
-          '..',
-          'public',
-          'upload',
-          `${Date.now()}-${file.originalname}`,
-        ),
-      );
-      writeStream.write(file.buffer);
-    });
+    // files.forEach((file) => {
+    //   const writeStream = createWriteStream(
+    //     join(
+    //       __dirname,
+    //       '..',
+    //       '..',
+    //       'public',
+    //       'upload',
+    //       `${Date.now()}-${file.originalname}`,
+    //     ),
+    //   );
+    //   writeStream.write(file.buffer);
+    // });
     return `用户登录=== ${JSON.stringify(data)}`;
   }
 
