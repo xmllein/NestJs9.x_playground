@@ -27,16 +27,6 @@
 
 ![命令行](./shot/1.png)
 
-## 参考资料
-
-- [官方网站](https://nestjs.com/)
-- [NestJS 文档](https://docs.nestjs.com/)
-- [NestJS 中文文档](https://docs.nestjs.cn/)
-- [Nestjs_Nestjs 实战教程](https://www.bilibili.com/video/BV1124y1k7th/?spm_id_from=333.999.0.0&vd_source=c5abf1ba032ca00c06ebba96e3ff445e)
-- [Nestjs 全家桶系列](https://www.bilibili.com/video/BV1NG41187Bs?p=26&vd_source=c5abf1ba032ca00c06ebba96e3ff445e)
-- [nestjs 从入门到实战--sequelize、typeorm、graphql、swagger](https://www.bilibili.com/video/BV1x341177P8/?spm_id_from=333.337.search-card.all.click&vd_source=c5abf1ba032ca00c06ebba96e3ff445e)
-- [NestJS 官方基础课程](https://www.bilibili.com/video/BV1T44y1W7Si/?spm_id_from=333.337.search-card.all.click&vd_source=c5abf1ba032ca00c06ebba96e3ff445e)
-
 ## 项目运行
 
 ```bash
@@ -50,15 +40,12 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## 测试
+## 参考资料
 
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
+- [官方网站](https://nestjs.com/)
+- [NestJS 文档](https://docs.nestjs.com/)
+- [NestJS 中文文档](https://docs.nestjs.cn/)
+- [Nestjs_Nestjs 实战教程](https://www.bilibili.com/video/BV1124y1k7th/?spm_id_from=333.999.0.0&vd_source=c5abf1ba032ca00c06ebba96e3ff445e)
+- [Nestjs 全家桶系列](https://www.bilibili.com/video/BV1NG41187Bs?p=26&vd_source=c5abf1ba032ca00c06ebba96e3ff445e)
+- [nestjs 从入门到实战--sequelize、typeorm、graphql、swagger](https://www.bilibili.com/video/BV1x341177P8/?spm_id_from=333.337.search-card.all.click&vd_source=c5abf1ba032ca00c06ebba96e3ff445e)
+- [NestJS 官方基础课程](https://www.bilibili.com/video/BV1T44y1W7Si/?spm_id_from=333.337.search-card.all.click&vd_source=c5abf1ba032ca00c06ebba96e3ff445e)
